@@ -4,7 +4,7 @@
   "description": "local authentication for waterlock",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "make test"
   },
   "repository": {
     "type": "git",

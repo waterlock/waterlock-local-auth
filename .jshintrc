@@ -23,5 +23,5 @@
 	"strict":true,
 	"laxbreak":true,
   	"laxcomma":true,
-	"predef":[]
+	"predef":["User"]
 }

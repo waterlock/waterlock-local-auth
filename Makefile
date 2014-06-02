@@ -1,8 +1,10 @@
 REPORTER = spec
-TESTS = $(shell find ./tests/* -name "*.test.js")
 MOCHA = ./node_modules/.bin/mocha
 SAILS = ./node_modules/.bin/sails
+WATERLOCK = ./node_modules/.bin/waterlock
 JSHINT = ./node_modules/.bin/jshint
+ISTANBUL = ./node_modules/.bin/istanbul
+TESTAPP = _testapp
 
 ifeq (true,$(COVERAGE))
 test: jshint coverage
@@ -16,19 +18,18 @@ base:
 	--colors \
     --reporter $(REPORTER) \
     --recursive \
-	$(TESTS) 
 	
 coveralls:
 	@echo "running mocha tests with coveralls..."
-	@NODE_ENV=test istanbul \
+	@NODE_ENV=test $(ISTANBUL) \
 	cover ./node_modules/mocha/bin/_mocha \
 	--report lcovonly \
-	-- -R spec \
-	--recursive \
-	$(TESTS) && \
+	-- -R $(REPORTER) \
+	--recursive && \
 	cat ./coverage/lcov.info |\
 	 ./node_modules/coveralls/bin/coveralls.js && \
 	 rm -rf ./coverage
+
 
 jshint:
 	@echo "running lint..."
@@ -36,9 +37,9 @@ jshint:
 
 clean:
 	@echo "clean..."
-	rm -rf _testapp
+	rm -rf $(TESTAPP)
 
 coverage: coveralls clean
 
 
-.PHONY: test base coveralls coverage
+.PHONY: test base coveralls coverage provision
