@@ -9,7 +9,7 @@ TESTAPP = _testapp
 ifeq (true,$(COVERAGE))
 test: jshint coverage
 else
-test: jshint base clean
+test: jshint base
 endif
 
 base:
@@ -39,7 +39,7 @@ clean:
 	@echo "clean..."
 	rm -rf $(TESTAPP)
 
-coverage: coveralls clean
+coverage: coveralls
 
 
 .PHONY: test base coveralls coverage provision
