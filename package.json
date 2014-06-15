@@ -1,6 +1,6 @@
 {
   "name": "waterlock-local-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "local authentication for waterlock",
   "main": "index.js",
   "scripts": {
