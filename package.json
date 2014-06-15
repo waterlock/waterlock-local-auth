@@ -28,6 +28,12 @@
     "bcrypt": "~0.7.8"
   },
   "author": "David Rivera <david.r.rivera193@gmail.com>",
+  "contributors": [ 
+    {
+      "name": "David Rivera",
+      "email": "david.r.rivera193@gmail.com"
+    } 
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/davidrivera/waterlock-local-auth/issues"
