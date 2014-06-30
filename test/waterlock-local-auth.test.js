@@ -1,13 +1,6 @@
-var should = require('should');
-var proxyquire =  require('proxyquire');
-
-var pathStub = {
-  normalize: function(str){
-    return "/some/path";
-  }
-};
-
-var wl = proxyquire.noCallThru().load('../lib/waterlock-local-auth', { 'path': pathStub});
+var test_helper = require('./test_helper');
+var should = test_helper.should;
+var wl = test_helper.waterlock_local;
 
 describe('waterlock-local-auth', function(){
   it('should export install path', function(done){
