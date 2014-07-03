@@ -44,7 +44,7 @@
   "bugs": {
     "url": "https://github.com/davidrivera/waterlock-local-auth/issues"
   },
-  "homepage": "http://davidrivera.github.io/waterlock/",
+  "homepage": "http://waterlock.ninja/",
   "preferGlobal": false,
   "engines": {
     "node": ">=0.6"

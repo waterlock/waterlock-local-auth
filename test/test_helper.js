@@ -1,7 +1,7 @@
 var proxyquire =  require('proxyquire')
   , should = require('should')
   , path = require('path')
-  , waterlockPath = path.normalize(__dirname+'/waterlock.json')
+  , waterlockPath = path.normalize(__dirname+'/waterlock.js')
 
 var pathStub = {
   normalize: function(str){
