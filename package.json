@@ -25,7 +25,7 @@
     "jshint": "*"
   },
   "dependencies":{
-    "bcrypt": "~0.7.8",
+    "bcrypt-nodejs": "git://github.com/shaneGirish/bcrypt-nodejs.git#885b2a4a2434c55d355d848cbc700680918a7bae",
     "lodash": "~2.4.1",
     "moment": "~2.7.0",
     "nodemailer": "~0.6.5",
