@@ -1,3 +1,6 @@
+# v0.0.5
+* [REFACTORING] now using new waterlock api
+
 # v0.0.4
 * [REFACTORING] moved reset token from main project to here
 * [REFACTORING] email resets now use jwt's instead of custom tokens
