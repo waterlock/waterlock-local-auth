@@ -27,7 +27,7 @@
   "dependencies":{
     "bcryptjs": "*",
     "lodash": "~2.4.1",
-    "moment": "~2.7.0",
+    "moment": "2.8.1",
     "nodemailer": "1.1.1",
     "jade": "1.5.0",
     "jwt-simple": "~0.2.0",
