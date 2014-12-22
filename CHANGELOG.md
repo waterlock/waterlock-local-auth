@@ -1,3 +1,6 @@
+# v0.0.6
+* [BUG] upgraded bcrypt to enable node latest 0.11
+
 # v0.0.5
 * [REFACTORING] now using new waterlock api
 
