@@ -1,6 +1,6 @@
 # Waterlock Local Auth
 
-[![Build Status](http://img.shields.io/travis/davidrivera/waterlock-local-auth.svg?style=flat)](https://travis-ci.org/davidrivera/waterlock-local-auth) [![NPM version](http://img.shields.io/npm/v/waterlock-local-auth.svg?style=flat)](http://badge.fury.io/js/waterlock-local-auth) [![Dependency Status](http://img.shields.io/gemnasium/davidrivera/waterlock-local-auth.svg?style=flat)](https://gemnasium.com/davidrivera/waterlock-local-auth)
+[![Build Status](http://img.shields.io/travis/waterlock/waterlock-local-auth.svg?style=flat)](https://travis-ci.org/davidrivera/waterlock-local-auth) [![NPM version](http://img.shields.io/npm/v/waterlock-local-auth.svg?style=flat)](http://badge.fury.io/js/waterlock-local-auth) [![Dependency Status](http://img.shields.io/gemnasium/davidrivera/waterlock-local-auth.svg?style=flat)](https://gemnasium.com/davidrivera/waterlock-local-auth)
 
 waterlock-local-auth is a module for [waterlock](http://waterlock.ninja/)
 providing a local authentication method for users either based on username or email.
@@ -19,12 +19,12 @@ authMethod:[
 		name: "waterlock-local-auth",
 		passwordReset: {
 			tokens: boolean, // object containing information regarding password resets
-			
+
 			// object containing information about your smtp server, see nodemailer
 			mail: {
 				protocol: string, // the transport protocol
 				options: string, // how it is use te transport method, see nodemailer
-				from: string, // the from address 
+				from: string, // the from address
 				subject: string, // the email subject for password reset emails
 				forwardUrl: string // the url to send the user to after they have clicked the password reset link in their inbox (e.g. a form on your site which POST to `/auth/reset`)
 			},
