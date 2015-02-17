@@ -25,20 +25,20 @@
     "jshint": "*"
   },
   "dependencies":{
-    "bcrypt": "~0.8.0",
+    "bcrypt": "~0.8.1",
     "lodash": "~2.4.1",
-    "moment": "~2.7.0",
-    "nodemailer": "~0.6.5",
+    "moment": "~2.9.0",
+    "nodemailer": "~1.3.0",
     "jade": "~1.3.1",
     "jwt-simple": "~0.2.0",
-    "node-uuid": "~1.4.1"
+    "node-uuid": "~1.4.2"
   },
   "author": "David Rivera <david.r.rivera193@gmail.com>",
-  "contributors": [ 
+  "contributors": [
     {
       "name": "David Rivera",
       "email": "david.r.rivera193@gmail.com"
-    } 
+    }
   ],
   "license": "MIT",
   "bugs": {
@@ -47,6 +47,6 @@
   "homepage": "https://github.com/davidrivera/waterlock-local-auth",
   "preferGlobal": false,
   "engines": {
-    "node": ">=0.6"
+    "node": ">=0.10"
   }
 }
