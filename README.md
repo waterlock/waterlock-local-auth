@@ -73,3 +73,16 @@ If you want to take advantage of the built in reset itself have the page you sen
 You can customize the email template used in the password reset via the template file defined in `config/waterlock.js` this template file is rendered with the fun and dynamic `jade` markup, the view var `url` is generated and passed to it when a user requests and password reset. You can customize this template to your liking and pass any other view vars you wish to it via the `vars` options in the js file.
 
 Your user can simply try to login to `/login` if the user is not found one will be created using [waterlines](https://github.com/balderdashy/waterline) `findOrCreate` method
+
+
+## Pluralized Endpoints
+
+If you are using sails blueprints and have pluralized your REST API you can configure waterlock to pluralize the auth endpoints by including pluralizeEndpoints=true in the waterlock.js file:
+
+```js
+module.exports.waterlock = {
+  
+  pluralizeEndpoints: true
+  
+}
+```
