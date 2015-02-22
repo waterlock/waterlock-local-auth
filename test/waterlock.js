@@ -27,7 +27,6 @@ module.exports.waterlock = {
       passwordReset:{
         tokens: false,
         mail: {
-          protocol: "SMTP",
           options:{
             service: "Gmail",
             auth: {
