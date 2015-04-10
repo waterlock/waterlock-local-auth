@@ -1,3 +1,6 @@
+# v0.0.7
+* [BUG] stop login action execution on serverError
+
 # v0.0.6
 * [BUG] upgraded bcrypt to enable node latest 0.11
 
