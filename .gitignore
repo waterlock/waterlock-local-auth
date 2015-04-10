@@ -30,3 +30,4 @@ node_modules
 # sublime project files
 *.sublime-project
 *.sublime-workspace
+.idea
