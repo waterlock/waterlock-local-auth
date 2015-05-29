@@ -16,7 +16,7 @@
     "authentication",
     "sails"
   ],
-  "devDependencies":{
+  "devDependencies": {
     "mocha": "*",
     "should": "*",
     "proxyquire": "*",
@@ -24,14 +24,15 @@
     "istanbul": "*",
     "jshint": "*"
   },
-  "dependencies":{
+  "dependencies": {
     "bcrypt": "~0.8.1",
-    "lodash": "~2.4.1",
-    "moment": "~2.9.0",
-    "nodemailer": "~1.3.0",
     "jade": "~1.3.1",
     "jwt-simple": "~0.2.0",
-    "node-uuid": "~1.4.2"
+    "lodash": "~2.4.1",
+    "moment": "~2.9.0",
+    "node-uuid": "~1.4.2",
+    "nodemailer": "^1.3.4",
+    "nodemailer-sendgrid-transport": "^0.1.0"
   },
   "author": "David Rivera <david.r.rivera193@gmail.com>",
   "contributors": [
