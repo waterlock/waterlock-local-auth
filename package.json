@@ -25,7 +25,7 @@
     "jshint": "*"
   },
   "dependencies":{
-    "bcrypt": "~0.8.3",
+    "bcrypt": "~0.8.5",
     "lodash": "~3.10.0",
     "moment": "~2.10.6",
     "nodemailer": "1.4.0",
