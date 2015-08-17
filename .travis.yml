@@ -1,8 +1,7 @@
 language: node_js
 
 env:
-  - CXX=g++-4.8
-  - COVERAGE=true
+  - CXX=g++-4.8 COVERAGE=true
 
 node_js:
   - "0.10"
