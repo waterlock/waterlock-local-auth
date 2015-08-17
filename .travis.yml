@@ -1,5 +1,9 @@
 language: node_js
 
+env:
+  - CXX=g++-4.8
+  - COVERAGE=true
+
 node_js:
   - "0.10"
   - "0.12"
@@ -7,11 +11,19 @@ node_js:
   - "iojs-v2"
   - "iojs-v3"
 
-env:
-  - COVERAGE=true
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+
+sudo: false
 
 script: make test
 
 branches:
   only:
     - master
+
+
