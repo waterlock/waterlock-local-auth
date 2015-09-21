@@ -22,7 +22,6 @@ authMethod:[
 
 			// object containing information about your smtp server, see nodemailer
 			mail: {
-				protocol: string, // the transport protocol
 				options: string, // how it is use te transport method, see nodemailer
 				from: string, // the from address
 				subject: string, // the email subject for password reset emails
