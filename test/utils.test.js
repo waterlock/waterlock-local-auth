@@ -9,7 +9,7 @@ describe('utils',function(){
       './waterlock-local-auth': waterlock,
       'path': {
         normalize: function(str) {
-          return __dirname+"/email.test.jade";
+          return __dirname+"/email.test.ejs";
         }
       }
     });
