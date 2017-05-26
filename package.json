@@ -17,12 +17,13 @@
     "sails"
   ],
   "devDependencies": {
-    "mocha": "*",
-    "should": "*",
-    "proxyquire": "*",
     "coveralls": "*",
+    "ejs": "^2.5.6",
     "istanbul": "*",
-    "jshint": "*"
+    "jshint": "*",
+    "mocha": "*",
+    "proxyquire": "*",
+    "should": "*"
   },
   "dependencies": {
     "bcrypt": "~0.8.5",
@@ -47,6 +48,6 @@
   "homepage": "https://github.com/davidrivera/waterlock-local-auth",
   "preferGlobal": false,
   "engines": {
-    "node": ">=0.10"
+    "node": ">=4.0.0"
   }
 }
