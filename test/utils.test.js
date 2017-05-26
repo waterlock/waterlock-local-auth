@@ -8,8 +8,8 @@ describe('utils',function(){
     {
       './waterlock-local-auth': waterlock,
       'path': {
-        normalize: function(str) {
-          return __dirname+"/email.test.jade";
+        resolve: function(str) {
+          return __dirname + "/email.test.ejs";
         }
       }
     });
@@ -20,8 +20,8 @@ describe('utils',function(){
       done();
     });
 
-    it('should return html', function(done){
-      utils.getHtmlEmail({owner: "test", resetToken: "token"}).should.be.String
+    it('should return promise with rendered html', function(done){
+      utils.getHtmlEmail({owner: "test", resetToken: "token"}).should.eventually.be.String
       done()
     });
 

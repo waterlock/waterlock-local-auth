@@ -30,7 +30,8 @@ authMethod:[
 
 			// object containing template information for the reset emails
 			template:{
-				file: string, // the relative path to the `jade` template for the reset emails
+        engine: 'ejs', // support several render engines, see the `consolidate.js` project
+				file: string, // the path to the reset email template, relative to the project root path eg: 'views/email.ejs'
 				vars: object, // object containing any vars you want passed to the template for rendering
 			}
 		},
@@ -69,6 +70,9 @@ if you choose to go with this option then a user upon visiting the url `/auth/re
 If you want to take advantage of the built in reset itself have the page you sent your user to above `POST` to `/auth/reset` with the post param of `password` If all is well a password reset will be issued.
 
 ## Template
-You can customize the email template used in the password reset via the template file defined in `config/waterlock.js` this template file is rendered with the fun and dynamic `jade` markup, the view var `url` is generated and passed to it when a user requests and password reset. You can customize this template to your liking and pass any other view vars you wish to it via the `vars` options in the js file.
+You can customize the email template used in the password reset via the template file defined in `config/waterlock.js` this template file is rendered with `ejs`, the sails.js default template engine, the view var `url` is generated and passed to it when a user requests and password reset. You can customize this template to your liking and pass any other view vars you wish to it via the `vars` options in the js file.
+
+### Custom template engine
+You can switch to another template engine of choice simply changing the `engine` option within the `waterlock.js` config file. Remember that the template engine must be available inside sails (simply put: install it before switching template engine). See [consolidate.js](https://github.com/tj/consolidate.js/) for a list of supported engines.
 
 Your user can simply try to login to `/login` if the user is not found one will be created using [waterlines](https://github.com/balderdashy/waterline) `findOrCreate` method
