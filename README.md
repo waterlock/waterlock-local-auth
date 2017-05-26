@@ -30,7 +30,7 @@ authMethod:[
 
 			// object containing template information for the reset emails
 			template:{
-				file: string, // the relative path to the `jade` template for the reset emails
+				file: string, // the path to the `jade` template for the reset emails, relative to the project root path eg: 'views/email.jade'
 				vars: object, // object containing any vars you want passed to the template for rendering
 			}
 		},
