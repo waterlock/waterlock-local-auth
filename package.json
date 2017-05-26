@@ -47,6 +47,6 @@
   "homepage": "https://github.com/davidrivera/waterlock-local-auth",
   "preferGlobal": false,
   "engines": {
-    "node": ">=0.10"
+    "node": ">=4.0.0"
   }
 }
