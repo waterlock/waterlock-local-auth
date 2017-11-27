@@ -44,7 +44,7 @@ Local auth adds the following attributes onto the Auth model
 
 ```js
   email: {
-    type: 'email',
+    type: 'string',
     unique: true
   },
   password: {
